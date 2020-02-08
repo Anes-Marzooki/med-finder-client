@@ -21,4 +21,4 @@ export default {
       'Quantity': '9990',
       'ExpiringDay': '1997',
     }
-}
+]}

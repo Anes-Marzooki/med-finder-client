@@ -53,6 +53,8 @@ class Register extends Component {
       dropdownOpen: newArray
     });
   }
+
+
   render() {
     return (
       <div className=' align-items-center'>
@@ -131,7 +133,7 @@ class Register extends Component {
                     >
                       <DropdownToggle caret>Select your status</DropdownToggle>
                       <DropdownMenu>
-                        <DropdownItem>User</DropdownItem>
+                        <DropdownItem >User</DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem>Pharmacy</DropdownItem>
                         <DropdownItem divider />
