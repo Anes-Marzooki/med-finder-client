@@ -23,7 +23,6 @@ class Register extends Component {
     super();
     this.toggle = this.toggle.bind(this);
     this.state = {
-      type: '',
       dropdownOpen: new Array(6).fill(false)
     };
   }
@@ -54,7 +53,6 @@ class Register extends Component {
       dropdownOpen: newArray
     });
   }
-  
   render() {
     return (
       <div className=' align-items-center'>
@@ -133,26 +131,11 @@ class Register extends Component {
                     >
                       <DropdownToggle caret>Select your status</DropdownToggle>
                       <DropdownMenu>
-                        <DropdownItem
-                          onClick={() => this.handleChange(User)}
-                          dropDownValue='User'
-                        >
-                          User
-                        </DropdownItem>
+                        <DropdownItem>User</DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem
-                          onClick={() => this.handleChange(Pharmacy)}
-                          dropDownValue='Pharmacy'
-                        >
-                          Pharmacy
-                        </DropdownItem>
+                        <DropdownItem>Pharmacy</DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem
-                          onClick={() => this.handleChange(Doctor)}
-                          dropDownValue='Doctor'
-                        >
-                          Doctor
-                        </DropdownItem>
+                        <DropdownItem>Doctor</DropdownItem>
                       </DropdownMenu>
                     </Dropdown>
                     <Button type='submit' color='success' block>
