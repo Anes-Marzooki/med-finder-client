@@ -16,7 +16,7 @@ export class GoogleMapsComponent extends React.Component {
       });
     });
   }
-  next = 
+  // next = 
 
   render() {
     return (
@@ -40,10 +40,10 @@ export class GoogleMapsComponent extends React.Component {
         )}
         <span>
           {" "}
-          <Button onClick={next} color='primary'>
+          <Button color='primary'>
             -
           </Button>
-          <Button onClick={previous} color='primary'>
+          <Button color='primary'>
             +
           </Button>
         </span>
